@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starlight Princess 1000</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        .photo-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: url('starlightprincess.jpg') no-repeat center center;
+            background-size: cover;
+            transition: filter 0.3s ease;
+        }
+        .loading-overlay {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            flex-direction: column;
+        }
+        .loading-animation {
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top: 4px solid #0e6b12;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .message-box {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background: rgba(0, 0, 139, 0.8);
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="photo-container" id="photoContainer"></div>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-animation"></div>
+        <div class="message-box">Connecting... Please Wait</div>
+    </div>
+
+    <script>
+        const photoContainer = document.getElementById('photoContainer');
+        const loadingOverlay = document.getElementById('loadingOverlay');
+
+        // Show photo first
+        photoContainer.style.backgroundImage = "url('starlightprincess.jpg')";
+
+        // Show loader and message box after 1.3 seconds
+        setTimeout(function() {
+            loadingOverlay.style.display = 'flex';
+            photoContainer.style.filter = 'blur(5px)';
+        }, 2000);
+    </script>
+</body>
+</html>

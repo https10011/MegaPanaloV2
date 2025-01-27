@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V2 MEGA PANALO - Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(180deg, #0a1229 0%, #1a2744 100%);
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .logo {
+            width: 200px;
+            margin: 40px 0;
+        }
+
+        .login-container {
+            width: 100%;
+            max-width: 400px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+
+        .social-button {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .facebook {
+            background-color: #316FF6;
+            color: white;
+        }
+
+        .google {
+            background-color: white;
+            color: #444;
+        }
+
+        .bottom-links {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .bottom-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+
+        .bottom-links a:hover {
+            color: white;
+        }
+
+        .social-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container {
+            margin-right: 10px;
+        }
+
+        .social-button img {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <img src="megapanalo-logo.png" alt="V2 MEGA PANALO" class="logo">
+    
+    <div class="login-container">
+        <a href="facebook.html" <button class="social-button facebook">
+            <img src="facebook.png" alt="Facebook Logo" width="30">
+         Continue with Facebook
+        </button> </a>
+       <a href="google.html" <button class="social-button google">
+            <img src="google-logo.png" alt="Google Logo" width="30">
+            Continue with Google
+        </button> </a>
+    </div>
+
+    <div class="bottom-links">
+        <p>Return home</p>
+    </div>
+</body>
+</html>

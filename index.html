@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta property="og:title" content="100% FIRST DEPOSIT BONUS PROMO - CHRISTMAS SPECIAL" />
+    <meta property="og:description" content="Check out the latest updates of MegaPanaloV2 and win upto 3000PHP on your first game." />
+    <meta property="og:image" content="bait.png" />
+    <meta property="og:url" content="https://yourwebsite.com" />
+    <meta property="og:type" content="website" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Panalo V2</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1e2329;
+            transition: filter 0.3s; /* Add transition for smooth blur effect */
+        }
+
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Center the modal */
+            padding: 1rem;
+            visibility: hidden; /* Hide by default */
+            opacity: 0;
+            transition: opacity 0.3s; /* Add transition for fade effect */
+        }
+
+        .modal-overlay.active {
+            visibility: visible; /* Show when active */
+            opacity: 1;
+        }
+
+        .modal {
+            background-color: white;
+            border-radius: 8px;
+            padding: 2rem;
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+            position: relative;
+        }
+
+        .modal h2 {
+            color: #4a90e2;
+            font-size: 24px;
+            margin-bottom: 1rem;
+        }
+
+        .modal button {
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .modal button:hover {
+            background-color: #357ab8;
+        }
+
+        /* Bottom Navigation Styling */
+        .bottom-nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #222; /* Dark background */
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        .nav-item.active .nav-icon,
+        .nav-item.active .nav-label {
+            color: #4a90e2; /* Blue color for active item */
+        }
+
+        .nav-icon {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .nav-item:hover {
+            color: #fff; /* White on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="min-h-screen bg-dark">
+        <!-- Header -->
+        <header class="header">
+            <img src="megapanalo-logo.png" alt="Mega Panalo Logo" class="logo">
+            <div class="header-buttons">
+                <a href="login.html"><button class="btn btn-login">Login</button></a>
+                <img src="US.jpg" alt="US Flag" class="flag"> 
+                <div class="grid-icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Welcome Banner -->
+        <div class="welcome-banner">
+            <button id="muteButton" class="mute-btn">
+                <img src="announcement.png" alt="Volume Icon" id="volumeIcon">
+            </button>
+            <span>🔥🔥 WELCOME TO MEGA PANALO V2 🔥🔥</span>
+        </div>
+
+        <!-- Hero Banner -->
+        <div class="hero-banner">
+        </div>
+
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <div class="nav-item">
+                <table style="width: 65px; height: 65px;">
+                    <tr>
+                        <td><img src="myfav.png" alt="My Favorite Logo" style="width: 100%; height: 85%;"></td>
+                    </tr>
+                </table>
+                <span>My favorite</span>
+            </div>
+            <div class="nav-item">
+                <table style="width: 65px; height: 65px;">
+                    <tr>
+                        <td><img src="hotgames.png" alt="Hot Games Logo" style="width: 100%; height: 85%;"></td>
+                    </tr>
+                </table>
+                <span>Hot Games</span>
+            </div>
+            <div class="nav-item">
+                <table style="width: 65px; height: 65px;">
+                    <tr>
+                        <td><img src="lottery.png" alt="Lottery Logo" style="width: 100%; height: 85%;"></td>
+                    </tr>
+                </table>
+                <span>Lottery</span>
+            </div>
+            <div class="nav-item">
+                <table style="width: 65px; height: 65px;">
+                    <tr>
+                        <td><img src="fish.png" alt="Fish Logo" style="width: 100%; height: 85%;"></td>
+                    </tr>
+                </table>
+                <span>Fish</span>
+            </div>
+            <div class="nav-item">
+                <table style="width: 65px; height: 65px;">
+                    <tr>
+                        <td><img src="live.png" alt="Live Logo" style="width: 100%; height: 85%;"></td>
+                    </tr>
+                </table>
+                <span>Live</span>
+            </div>
+        </nav>
+
+        <!-- Game Grid -->
+        <main class="game-grid">
+            <div class="game-item">
+                <div class="game-image">
+                    <a href="superace.html" class="game-link"><img src="superace.png" alt="Super Ace"> </a>
+                    <span class="provider">Jili</span>
+                </div>
+                <h3>Super Ace</h3>
+            </div>
+            <div class="game-item">
+                <div class="game-image">
+                    <a href="starlightprincess.html" class="game-link"><img src="starlightprincess.png" alt="Starlight Princess 1000"> </a>
+                    <span class="provider">PP</span>
+                </div>
+                <h3>Starlight Princess 1000</h3>
+            </div>
+            <div class="game-item">
+                <div class="game-image">
+                    <a href="gatesofolympus.html" class="game-link"><img src="godsofolympus.png" alt="Gates of Olympus 1000"> </a>
+                    <span class="provider">PP</span>
+                </div>
+                <h3>Gates of Olympus 1000</h3>
+            </div>
+            <div class="game-item">
+                <div class="game-image">
+                    <a href="sugarrush.html" class="game-link"><img src="sugarrush.png" alt="Sugar Rush 1000"> </a>
+                    <span class="provider">PP</span>
+                </div>
+                <h3>Sugar Rush 1000</h3>
+            </div>
+            <div class="game-item">
+                <div class="game-image">
+                    <a href="wildbounty.html" class="game-link"><img src="wildbounty.png" alt="Wild West Showdown"> </a> 
+                    <span class="provider">Pocket Games Soft</span>
+                </div>
+                <h3>Wild West Showdown</h3>
+            </div>
+            <div class="game-item">
+                <div class="game-image">
+                    <a href="fortunegems.html" class="game-link"><img src="fortunegems.png" alt="Fortune Gems 2"> </a>
+                    <span class="provider">Jili</span>
+                </div>
+                <h3>Fortune Gems 2</h3>
+            </div>
+        </main>
+
+        <!-- Bottom Navigation -->
+        <!-- Bottom Navigation -->
+        <nav class="bottom-nav">
+            <a href="#" class="nav-item active">
+                <span class="nav-icon"><i class="fas fa-home"></i></span>
+                <span class="nav-label">Home</span>
+            </a>
+            <a href="#" class="nav-item">
+                <span class="nav-icon"><i class="fas fa-headphones-alt"></i></span>
+                <span class="nav-label">Services</span>
+            </a>
+            <a href="#" class="nav-item">
+                <span class="nav-icon"><i class="fas fa-wallet"></i></span>
+                <span class="nav-label">Deposit</span>
+            </a>
+            <a href="#" class="nav-item">
+                <span class="nav-icon"><i class="fas fa-user"></i></span>
+                <span class="nav-label">Member</span>
+            </a>
+        </nav>
+    <!-- Log-in Modal -->
+    <div class="modal-overlay" id="login-modal">
+        <div class="modal">
+            <h2>You need to log in first</h2>
+            <button id="login-btn">Log In</button>
+        </div>
+    </div>
+
+    <script>
+        const loginModal = document.getElementById("login-modal");
+        const loginBtn = document.getElementById("login-btn");
+        const gameLinks = document.querySelectorAll(".game-link");
+
+        // Show the log-in modal when a game link is clicked
+        gameLinks.forEach(link => {
+            link.addEventListener("click", (event) => {
+                event.preventDefault();
+                loginModal.classList.add("active");
+            });
+        });
+
+        // Redirect to login page when the "Log In" button is clicked
+        loginBtn.addEventListener("click", () => {
+            window.location.href = "login.html";
+        });
+    </script>
+</body>
+</html>
